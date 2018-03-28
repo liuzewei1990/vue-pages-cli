@@ -15,8 +15,9 @@ import Keyboard from "@/components/Keyboard";
 import MoneyInput from "@/components/Keyboard/MoneyInput";
 import { XButton } from 'vux'
 import { setTimeout } from 'timers';
-
+import App from 'assets/js/App';
 export default {
+	mixins: [App.vueMixins.testMixin2],
 	components: { Keyboard, XButton, MoneyInput },
 	data() {
 		return {

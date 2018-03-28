@@ -27,7 +27,7 @@
 
 <script>
 
-import Lib from 'assets/js/Lib';
+import App from 'assets/js/App';
 
 import { Msg, Divider, XButton } from 'vux'
 
@@ -35,13 +35,13 @@ import { Msg, Divider, XButton } from 'vux'
 import HbHead from 'components/HbHead';
 
 export default {
-  name: 'add',	
+  name: 'add',
   components: {
-    HbHead,Msg, Divider, XButton
+    HbHead, Msg, Divider, XButton
   },
-  data () {
+  data() {
     return {
-      
+
     }
   },
   methods: {

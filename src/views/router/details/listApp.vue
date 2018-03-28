@@ -13,7 +13,7 @@
 
 <script>
 
-import Lib from 'assets/js/Lib';
+import App from 'assets/js/App';
 
 import { XButton } from 'vux'
 
@@ -21,11 +21,11 @@ import HbHead from 'components/HbHead';
 
 export default {
   components: {
-    HbHead,XButton
+    HbHead, XButton
   },
-  data () {
+  data() {
     return {
-      
+
     }
   },
   methods: {

@@ -1,6 +1,5 @@
 /*
  * vuejs 	过滤器
- * time 	2017年1月18日 18:46:54
  */
 
 import Vue from 'vue';
@@ -13,8 +12,8 @@ import accounting from 'accounting';
   * @param dat	 		保留的小数点位数，默认为2位
   * @param return 
 */
-Vue.filter('currency', function (value,symbol='¥',dat=2) {
-  
-  return accounting.formatMoney(value,symbol,dat);
-  
+Vue.filter('currency', function (value, symbol = '¥', dat = 2) {
+
+  return accounting.formatMoney(value, symbol, dat);
+
 })
