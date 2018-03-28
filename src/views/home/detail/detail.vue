@@ -1,6 +1,9 @@
 <template>
 	<div class="detail">
-		详情页
+		<i class="icon-microblog"></i>
+		<span class="icon-mk">
+			<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+		</span>
 	</div>
 </template>
 
@@ -15,7 +18,7 @@ export default {
 <style lang="less" scoped>
 @import url("../../../assets/less/common.less");
 .detail {
-  color: red;
-  font-size: 30/@rem;
+  font-size: 50/@rem;
+  text-align: center;
 }
 </style>
