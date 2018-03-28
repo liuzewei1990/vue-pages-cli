@@ -21,6 +21,7 @@ FastClick.attach(document.body);
 import conf from './conf';
 import common from './common';
 import * as vueMixins from './vueMixins';
+console.log("1111")
 
 export default {
 	common, conf, vueMixins
