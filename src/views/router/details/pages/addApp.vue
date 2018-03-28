@@ -42,7 +42,12 @@ export default {
   data() {
     return {
 
+
     }
+  },
+  mounted() {
+    console.log(this.$route.query["name"]);
+    console.log(this.$store.state.data);
   },
   methods: {
 

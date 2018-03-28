@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<a href="../router/details.html#/add?name=123">前往单页多路由页面</a>
 		<money-input :value="value" :focus="focus"></money-input>
 		<Keyboard
 			ref="Keyboard"
