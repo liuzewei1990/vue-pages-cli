@@ -9,7 +9,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
-var entries =  utils.getMultiEntry('./src/'+config.moduleName+'/**/**/*.js'); // 获得入口js文件
+var entries = utils.getMultiEntry('./src/' + config.moduleName + '/**/**/*.js'); // 获得入口js文件
 var chunks = Object.keys(entries);
 
 
@@ -51,22 +51,22 @@ var webpackConfig = merge(baseWebpackConfig, {
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
-   /* new HtmlWebpackPlugin({
-      filename: process.env.NODE_ENV === 'testing'
-        ? 'index.html'
-        : config.build.index,
-      template: 'index.html',
-      inject: true,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true
-        // more options:
-        // https://github.com/kangax/html-minifier#options-quick-reference
-      },
-      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'dependency'
-    }),*/
+    /* new HtmlWebpackPlugin({
+       filename: process.env.NODE_ENV === 'testing'
+         ? 'index.html'
+         : config.build.index,
+       template: 'index.html',
+       inject: true,
+       minify: {
+         removeComments: true,
+         collapseWhitespace: true,
+         removeAttributeQuotes: true
+         // more options:
+         // https://github.com/kangax/html-minifier#options-quick-reference
+       },
+       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+       chunksSortMode: 'dependency'
+     }),*/
     // split vendor js into its own file
     /*new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -86,19 +86,19 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       chunks: chunks,
-	  	minChunks: 4 || chunks.length 
+      minChunks: 4 || chunks.length
     }),
-	/*
-    // copy custom static assets
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../static'),
-        to: config.build.assetsSubDirectory,
-        ignore: ['.*']
-      }
-    ])*/
+    /*
+      // copy custom static assets
+      new CopyWebpackPlugin([
+        {
+          from: path.resolve(__dirname, '../static'),
+          to: config.build.assetsSubDirectory,
+          ignore: ['.*']
+        }
+      ])*/
 
-   
+
 
   ]
 })
@@ -127,17 +127,18 @@ if (config.build.bundleAnalyzerReport) {
 }
 
 //构建生成多页面的HtmlWebpackPlugin配置，主要是循环生成
-var pages =  utils.getMultiEntry('./src/'+config.moduleName+'/**/**/*.html');
+var pages = utils.getMultiEntry('./src/' + config.moduleName + '/**/**/*.html');
 for (var pathname in pages) {
-
+  var fileName = (pathname + "").replace(/views\//, "");
   var conf = {
-    filename: pathname + '.html',
+    filename: fileName + '.html',
     template: pages[pathname], // 模板路径
-    chunks: ['vendor',pathname], // 每个html引用的js模块
+    chunks: ['vendor', pathname], // 每个html引用的js模块
     inject: true,              // js插入位置
-	hash:true
+    hash: true
   };
- 
+
+  console.log(JSON.stringify(conf))
   webpackConfig.plugins.push(new HtmlWebpackPlugin(conf));
 }
 

@@ -1,0 +1,109 @@
+
+body{
+	color: #444;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+.iconfont{
+	font-family:"iconfont";
+	font-size:16px;font-style:normal;
+	vertical-align: middle;
+}                    
+
+
+body,
+html,
+li,
+input,
+gloabl,
+h2,
+th,
+input,
+nav,
+h1,
+embed,
+blockquote,
+ol,
+xml,
+div,
+dl,
+dt,
+dd,
+ul,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+abbr,
+p,
+header,
+hgroup,
+Section,
+figure,
+section,
+nav,
+article,
+aside,
+canvas {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+	padding: 0;
+	
+	margin: 0;
+}
+a {
+	font-size: 100%;
+	border: 0;
+	color: #333;
+	text-decoration: none;
+}
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+input,textarea{
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  	-webkit-appearance: none; 
+}
+
+input, button, textarea, select { font-size: 100%; background-color: transparent; }
+body, input, button, textarea, select, option {border: none;outline: none}
+a, input, textarea { outline: 0 none; text-decoration:none;}
+
+input[type="text"],input[type="password"],input[type="number"],input[type="button"],select,textarea{
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		appearance:none; 
+		outline:none; 
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-moz-tap-highlight-color:rgba(0,0,0,0); 
+		border-radius:0;
+  }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]::-moz-inner-spin-button,
+input[type=number]::-moz-outer-spin-button {
+    -moz-appearance: none;
+    margin: 0;
+}
+
+input::-webkit-input-placeholder{
+    font-weight: 100;
+    color: #c4c4c5;
+}

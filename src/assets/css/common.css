@@ -1,80 +1,10 @@
-body{
-	background: #f1f0f3;
-	color: #444;
-	padding: 0;
-	margin: 0;
-	font-size: 14px;
+.container{
+	width: 980px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
 }
-
-.iconfont{
-	font-family:"iconfont";
-font-size:16px;font-style:normal;
-vertical-align: middle;
-}                    
-
-
-body,
-html,
-li,
-input,
-gloabl,
-h2,
-th,
-input,
-nav,
-td,
-h1,
-embed,
-blockquote,
-ol,
-xml,
-div,
-dl,
-dt,
-dd,
-ul,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-abbr,
-p,
-header,
-hgroup,
-Section,
-figure,
-section,
-nav,
-article,
-aside,
-canvas {
-	margin: 0;
-	padding: 0;
-}
-img {
-	border: 0;
-	padding: 0;
-	
-	margin: 0;
-}
-a {
-	font-size: 100%;
-	border: 0;
-	color: #333;
-	text-decoration: none;
-}
-ol,
-ul,
-li {
-	list-style: none;
-}
-
-input,textarea{
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  	-webkit-appearance: none; 
+.customClass{
+	width: auto !important;
 }
 
 .martop15 {
@@ -83,15 +13,25 @@ input,textarea{
 .martop20 {
 	margin-top: 20px;
 }
+.martop30 {
+	margin-top: 30px;
+}
+.martop25 {
+	margin-top: 25px;
+}
 .martop5 {
 	margin-top: 5px;
 }
 .martop10 {
 	margin-top: 10px;
 }
+
+.martop40 {
+	margin-top: 40px;
+}
+
 .mt0{
-	
-margin-top: 0;	
+	margin-top: 0;	
 }
 .pad15 {
 	padding: 15px;

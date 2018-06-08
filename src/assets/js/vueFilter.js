@@ -3,7 +3,7 @@
  */
 
 import Vue from 'vue';
-import accounting from 'accounting';
+// import accounting from 'accounting';
 
 /**
   * 格式化数字，相当于vue1.0时的currency过滤器
@@ -14,6 +14,6 @@ import accounting from 'accounting';
 */
 Vue.filter('currency', function (value, symbol = '¥', dat = 2) {
 
-  return accounting.formatMoney(value, symbol, dat);
+  // return accounting.formatMoney(value, symbol, dat);
 
 })

@@ -1,0 +1,36 @@
+{
+    "tradeStatus": {
+        "SUCCESS": "支付成功",
+        "PAY_WAIT": "等待输入密码或订单待支付",
+        "PROCESSING": "订单处理中",
+        "FAIL": "支付失败",
+        "CANCEL": "订单已撤销",
+        "REFUND": "订单已退款",
+        "INIT": "订单待创建"
+    },
+    "payType": {
+        "ALIPAY": "支付宝",
+        "WECHAT": "微信",
+        "QUICK_PAY": "快捷支付"
+    },
+    "payTypeDetail": {
+        "trade.scanPay": "消费者主扫",
+        "trade.microPay": "消费者被扫（条码支付）",
+        "trade.appPay": "APP支付",
+        "trade.jsPay": "公众号支付",
+        "trade.h5Pay": "微信H5支付（微信外部浏览器）",
+        "trade.initQuickPay": "快捷支付下单",
+        "trade.quickPay": "快捷支付确认"
+    },
+    "refundStatus": {
+        "INIT": "下单",
+        "PROCESSING": "处理中",
+        "SUCCESS": "成功",
+        "FAIL": "失败",
+        "CHANGE": "转入代发"
+    },
+    "sceneInfo": {
+        "iOS_WAP": "ios 网页应用",
+        "AND_WAP": "android 网页应用"
+    }
+}

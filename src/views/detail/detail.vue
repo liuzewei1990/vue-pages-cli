@@ -16,9 +16,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import url("../../../assets/less/common.less");
+@import url("../../assets/less/common.less");
 .detail {
-  font-size: 50/@rem;
+  font-size: 50 / @rem;
   text-align: center;
 }
 </style>
